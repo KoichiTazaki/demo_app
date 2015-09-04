@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  area: MyString
+  stage: MyString
+  tmcp_rep: MyString
+  bm_rep: MyString
+  priority: MyString
+  fih_target: MyString
+
+two:
+  name: MyString
+  code: MyString
+  area: MyString
+  stage: MyString
+  tmcp_rep: MyString
+  bm_rep: MyString
+  priority: MyString
+  fih_target: MyString

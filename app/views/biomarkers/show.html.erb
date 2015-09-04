@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Marker:</strong>
+  <%= @biomarker.marker %>
+</p>
+
+<p>
+  <strong>Matrix:</strong>
+  <%= @biomarker.matrix %>
+</p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @biomarker.purpose %>
+</p>
+
+<p>
+  <strong>Decision:</strong>
+  <%= @biomarker.decision %>
+</p>
+
+<p>
+  <strong>Evidence level:</strong>
+  <%= @biomarker.evidence_level %>
+</p>
+
+<p>
+  <strong>Analyte type:</strong>
+  <%= @biomarker.analyte_type %>
+</p>
+
+<p>
+  <strong>Clinical relevance:</strong>
+  <%= @biomarker.clinical_relevance %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @biomarker.project_id %>
+</p>
+
+<%= link_to 'Edit', edit_biomarker_path(@biomarker) %> |
+<%= link_to 'Back', biomarkers_path %>

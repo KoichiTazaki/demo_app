@@ -1,0 +1,41 @@
+<h1>Listing biomarkers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Marker</th>
+      <th>Matrix</th>
+      <th>Purpose</th>
+      <th>Decision</th>
+      <th>Evidence level</th>
+      <th>Analyte type</th>
+      <th>Clinical relevance</th>
+      <th>Project</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @biomarkers.each do |biomarker| %>
+      <tr>
+        <td><%= biomarker.marker %></td>
+        <td><%= biomarker.matrix %></td>
+        <td><%= biomarker.purpose %></td>
+        <td><%= biomarker.decision %></td>
+        <td><%= biomarker.evidence_level %></td>
+        <td><%= biomarker.analyte_type %></td>
+        <td><%= biomarker.clinical_relevance %></td>
+        <td><%= biomarker.project_id %></td>
+        <td><%= link_to 'Show', biomarker %></td>
+        <td><%= link_to 'Edit', edit_biomarker_path(biomarker) %></td>
+        <td><%= link_to 'Destroy', biomarker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Biomarker', new_biomarker_path %>

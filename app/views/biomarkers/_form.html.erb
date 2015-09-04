@@ -1,0 +1,49 @@
+<%= form_for(@biomarker) do |f| %>
+  <% if @biomarker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@biomarker.errors.count, "error") %> prohibited this biomarker from being saved:</h2>
+
+      <ul>
+      <% @biomarker.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :marker %><br>
+    <%= f.text_field :marker %>
+  </div>
+  <div class="field">
+    <%= f.label :matrix %><br>
+    <%= f.text_field :matrix %>
+  </div>
+  <div class="field">
+    <%= f.label :purpose %><br>
+    <%= f.text_field :purpose %>
+  </div>
+  <div class="field">
+    <%= f.label :decision %><br>
+    <%= f.text_field :decision %>
+  </div>
+  <div class="field">
+    <%= f.label :evidence_level %><br>
+    <%= f.text_field :evidence_level %>
+  </div>
+  <div class="field">
+    <%= f.label :analyte_type %><br>
+    <%= f.text_field :analyte_type %>
+  </div>
+  <div class="field">
+    <%= f.label :clinical_relevance %><br>
+    <%= f.text_field :clinical_relevance %>
+  </div>
+  <div class="field">
+    <%= f.label :project_id %><br>
+    <%= f.number_field :project_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

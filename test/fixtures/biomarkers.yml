@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marker: MyString
+  matrix: MyString
+  purpose: MyString
+  decision: MyString
+  evidence_level: MyString
+  analyte_type: MyString
+  clinical_relevance: MyString
+  project_id: 1
+
+two:
+  marker: MyString
+  matrix: MyString
+  purpose: MyString
+  decision: MyString
+  evidence_level: MyString
+  analyte_type: MyString
+  clinical_relevance: MyString
+  project_id: 1
